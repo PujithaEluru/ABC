@@ -1,0 +1,91 @@
+1.What are the benefits of using Salesforce CRM?
+ We get the following benefits by using Salesforce CRM.   
+
+Improved organizational understanding.
+Enhanced communication.
+We can understand the customer better and can facilitate better services.
+Salesforce automates repeated rule-based tasks.
+Improved analytics and dashboards to analyze the data.
+Reduction in cost and cycle time.
+Improves the efficiency of teams.
+
+2.What are the actions in the workflow? 
+ Below mentioned are the actions in the workflow 
+
+Field update 
+Task
+Outbound message 
+Email alert 
+
+3.What can cause data loss in Salesforce? 
+There are many things that can contribute to the data loss in Salesforce. Which includes : 
+
+Migrating to number, percent, and money, from other data types. 
+When you change the date and time 
+Migrating to multi-select picklist from any other type but except picklist. 
+Moving from Checkbox, auto number,multi-select picklist to any other types. 
+Changing text area to phone, URL, email, or text. 
+
+4. What is the junction object and what is it used for? 
+Junction objects are mainly used to create a many-to-many relationship in Salesforce. If you consider a recruiting application as an example, you can find a position that is linked to many candidates, and in the same fashion, a candidate can apply for many positions. 
+
+5.Is it possible to restrict access to data using sharing rules?
+The sharing rules are used only for allowing greater access to records not for restricting.
+
+6.How many ways we can share a record?
+Role Hierarchy :
+
+If we add a user to a role, the user who is above in the role hierarchy will have read access.
+
+Setup → manage users → roles → setup roles → click on ‘add role’ → provide name and save.
+OWD:
+
+Defines the baseline setting for the organization.
+Defines the level of access to the user can see the other user’s record
+OWD can be Private, Public Read Only, Public Read and Write.
+
+Setup → Security Controls → sharing settings → Click on ‘Edit’
+Manual Sharing :
+
+Manual Sharing is sharing a single record to a single user or group of users.
+
+We can see this button detail page of the record and this is visible only when the OWD setting is private.
+
+
+7.What is the difference between insert() and database .insert()?
+Using the insert method we can insert the records but if any error occurs in any record system will throw an error insertion fail and none of the records are inserted. If we want to execute partially the success of bulk insert operation we will use database .insert.
+
+
+8.What is Apex in Salesforce?
+Apex is a strongly typed object-oriented programming language.
+
+It allows the developer to execute flows and transaction control statements.
+
+Apex enables developers to add business logic to most system events like button clicks related to record updates and VisualForce pages.
+
+
+9.What is Batch Apex in Salesforce?
+Batch Apex: Batch Apex allows you to define a single job that can be broken up into manageable chunks, whereas every chunk can be processed separately.
+
+In the Batch Apex it will fetch all the records on which you want to perform the field update and divide them into a list of 200 records and on every 200 records operation is performed separately.
+
+This would help us to execute on more than 10,000 records as it won’t perform an operation on all the records in a single transaction instead it dividing them into a Number of subtasks where each subtask may contain records up to 4000.
+
+Example:
+
+If you need to make a field update of every record of account object in your organization, then we have governing limits that would restrict us from achieving the above task.
+
+Reason: In a single transaction we can process only 10,000 records. Now in the above case if we have more than 10,000 records in the organization then we can not perform this field update.
+
+10.What is Multitenant Architecture in Salesforce?
+It is the cloud's fundamental technology to share IT resources securely and cost-efficiently.
+
+11.Does Apex support DML operations?
+ANS: Apex has built-in support for DML operations such as INSERT, UPDATE, DELETE, and DML 
+exception handling. It supports inline SOQL and SOSL query processing, returning a set of 
+sObject records.
+
+
+
+
+

@@ -1,0 +1,176 @@
+1.How does Salesforce deploy Sales Tracking?
+Salesforce records data on details such as sales numbers, customer details, repeat customers & customers served and use these to create detailed reports, charts, and dashboards. This way it keeps a track of sales in your organization.
+
+2.What is the difference between isNull and isBlank?
+Use the ISBLANK() function for text fields. As text fields can never be NULL, even if nothing is provided as a value, ISNULL() function takes only an empty value. If ISNULL() is used with a text field then it returns false.
+
+3.What is the limit of Data.com records which can be added to Salesforce?
+In the Data.com user’s section, find your name to view your monthly limit. It will give details such as how many records are already added or exported for this month. The user goes to the Setup, enters the User in the Quick Find Box and selects prospector users.
+
+4.What is the use of SOQL? What are the differences between SOQL and SOSL?
+The full form of SOQL is Standard Object Query Language. SOQL evaluates to a single sObject and a list of many sObjects or an integer for count method queries. It is used to retrieve data from the Salesforce platform and resides inside Apex or Visualforce and returns a set of data.
+
+
+SOQL	                                                                                             SOSL
+========================================================================================================================================
+It is possible to search only one object at a time.	                               Multiple objects can be searched here at a time.
+Uses “SELECT” keyword for retrieval of records from the database.	               Uses “FIND” keyword for retrieval of record from database.
+It allows to search only one table.                                                    It allows to search multiple tables.
+It allows to perform DML operations on query results.	                               It is not possible to perform DML on search results.
+This is used in a query ( ) call.	                                               This is used in a search ()call in the API.
+This is used in classes and triggers.	                                               This cannot be used in triggers.
+Returns records.	                                                               Returns fields.
+
+
+5.What is an Audit Trail?
+Administrators need to make changes in the organizational setup. Audit Trail history helps you to track the recent 20 changes that are made in setup, by multiple administrators.
+
+6.What is Sandbox org in Salesforce? What are the different types of Sandbox in Salesforce?
+Sandboxes are for copies of the production organization. It is possible to make such multiple copies of the same environment that serve various purposes like development, testing and training without any need for compromise of data in the production org.
+
+As sandboxes are isolated from the production environment, operations performed in the sandbox have no impact on the production org.
+
+There are four types of Salesforce Sandboxes as shown below:
+
+Developer Sandbox
+Developer Pro Sandbox
+Partial Data Sandbox
+Full Sandbox
+
+7.What are the options for deploying from Sandbox to Production org? What is an Outbound Change Set?
+Various methods are adopted for deploying a sandbox to production. The main method is using the Change Sets. A Change Set enables to create and test a new object in the sandbox and then send that to the production org. It contains information on org and not on any data such as records.
+
+The other methods to deploy sandbox to production org include Force.com IDE, unmanaged packages as well as ANT migration tools.
+
+When sending customizations from current org to another org the Outbound Change Set is used. Once received by the receiving org it is called Inbound Change Set.
+
+
+8.What are Bucket Fields in Salesforce?
+Bucket Fields categorize records in Salesforce reports without any need for a formula or a custom field. They exist only in the reports. When a bucket column is created then multiple categories of group report values.
+
+9.What is Custom Label in Salesforce? How many Custom Labels can you define and of what size?
+Custom Labels enable developers to create multi-lingual applications. It automatically presents information as information or messages, by using the user’s native language. These are custom text values that accessible from Apex classes, Lightning components, and Visualforce pages.
+
+A minimum number of 5000 custom labels can be created for each organization. The size is about 1000 characters.
+
+10.What is Data Skew in Salesforce?
+ The full form of SOQL is Standard Object Query Language. SOQL evaluates a condition in an enterprise when you require to work with say 10,000 records.
+
+A single user owns a huge number of records and we call that as “ownership data skew” and it causes performance issues while updating in Salesforce.
+
+11.What is the use of Custom Settings? What are the types of Custom Settings in Salesforce?
+
+Answer: Custom Settings are similar to the custom objects. The developers create custom data and associate custom data for an organizational profile or a specific user.
+
+The exposure of custom data settings to the application cache is beneficial due to the efficient access with no need for the cost of the repeated queries to the database. This data can be used by SOAP API, validation rule or formula field.
+
+The different types of Custom Settings in Salesforce include:
+
+Hierarchy type
+List type
+
+12.What is a Wrapper Class in Salesforce?
+
+Answer: A Wrapper class is defined as a class and a data structure. It is an abstract data type which has its instances formed by a collection of objects.
+
+The basic nature is that of a custom object and is defined by the Wrapper class properties. It allows records to be checked from a list and process them for a specific action.
+
+
+13. What is the difference between WhoID and WhatID?
+
+Answer: WhoID refers to people such as contact or leads. Whereas “What ID” refers only to objects.
+
+14.What is Apex?
+Answer: Apex is an object-oriented programming language that enables the developers to execute flow and transaction control statements, on Salesforce servers in association with a call to an API.
+
+It adds business logic to system events such as related record objects, button clicks, and Visualforce pages – with Java-like syntax and acts as a stored procedure.
+
+15.What are Maps in Apex?
+Answer: Maps are used to store data in the form of key-value pairs, where each unique key maps to a single value.
+
+Syntax: Map<String, String> country_city = new Map<String, String>();
+
+16.What is an Apex Transaction?
+Answer: An Apex transaction is a set of operations, that is executed as a single unit. These operations include DML operations that are responsible for querying records.
+
+All the DML operations in a transaction get completed successfully or get completely rolled back if an error occurs even in saving a single record.
+
+17.Is it possible to edit Apex Class/Trigger in the Production Environment?
+Answer: No, it is not possible. We cannot directly edit the Apex Class/Trigger in the production environment. It can be done only in the Developer edition, sandbox org or the testing org.
+
+18.What are the ways to call an Apex Class in Salesforce?
+Answer: The various ways to call an Apex class in Salesforce are as follows:
+
+From a Developer Console
+Using Triggers
+From Visualforce Page
+With JavaScript Links
+From Home Page Components
+From Another Class
+
+19.Is it possible to customize Apex and Visualforce directly from the Production Org?
+Answer: It is not possible to customize Apex in the production org itself, however, it can be changed and deployed through a sandbox, and must meet test coverage. Visualforce, on the contrary, can be changed in the production org.
+
+20.When is it possible to use Apex over Workflow rules or Process Builder?
+
+Answer: There are various reasons to adopt Apex over Workflow rules or Process Builder as shown below:
+
+Apex can be used in those cases where there are limitations for Workflow rules or Process Builder like putting information in external systems.
+Apex is more efficient while dealing with large sets of data as it has fewer limitations.
+
+
+21.What is Apex Test Coverage?
+Answer: The Apex testing framework generates code coverage numbers for the Apex classes and triggers, every time when one or more tests are run. Code Coverage denotes the number of executable lines of code in classes and triggers which is exercised by test methods.
+
+Test methods are written and tested to generate the Code Coverage. It is calculated as a percentage of a covered line divided by a covered and uncovered line.
+
+The minimum test coverage must be 75 % for deployment in the production org.
+
+
+22.What is Apex Email Service?
+When you want to process the content, attachments, and the headers of inbound emails then Apex Email Service is used. It is possible to create an email service that automatically creates contact records based on contact-related information in the messages.
+
+Each of these email services is associated with a Salesforce generated email address, to which the users send messages for processing. It is also possible for multiple users to access a single email service.
+
+23.What are the methods of Batch Apex Class?
+ It implements Database batchable interface with three methods as shown below.
+
+a) Start: This is used at the beginning of the batch Apex job. It is used to collect the records or objects, to pass to the interface method execute. It returns the DatabaseQueryLocator object or an iterable that contains the records or objects passed into the job.
+
+b) Execute: This is used for each batch of records that are passed to the method. This method is used for all the processing of data. This method takes the following:
+
+A reference to DatabaseBatchableContext Object.
+A list of sObject records.
+c) Finish: This is called once all the batches are processed. This is used for sending confirmation emails or for executing post-processing operations. It uses one argument, which is the reference of the DatabaseBatchableContext object.
+
+24.What are the types of Collections in Apex? Explain List and Set in Collections.
+Answer: The types of collections in Apex are listed below:
+
+List
+Map
+Set
+The list is a variable that has an ordered collection of elements and they are distinguished by their indices. The index is numeric and starts at zero. Given below is an example of declaring a list, with the list keyword followed by primitive data, sObjects, nested lists, map or set types.
+
+ set is a collection of unordered elements of primitives or sObjects. No element can be retrieved by using an index as in the case of a list. While iterating the elements in a set, there should not be any reliance on the same order. Moreover, a set cannot contain duplicate elements.
+
+25.What is Apex Trigger? What is the Syntax of Trigger in Salesforce?
+Answer: Apex Triggers perform custom actions to records in Salesforce, before or after the events. Examples of such actions include insertion, updation, and deletion.
+
+The triggers help to perform operations that are subject to specific conditions such as modifying related records or restricting certain operations. Triggers can be used for anything you do in Apex, executing SOQL or DML or even calling custom Apex methods.
+
+There are two different types of trigger in Salesforce as shown below:
+
+Before Trigger: It is executed to validate the record values before saving to the database.
+After Trigger: It is executed to validate the record values after saving to the database.
+
+26.What is Asynchronous Apex? What are its different types?
+Answer: Asynchronous Apex is used to run processes that are scheduled at a later time. There are four types of Asynchronous Apex.
+
+They are:
+
+Future Methods
+Batch Apex
+Queueable Apex
+Schedules Apex
+
+27.

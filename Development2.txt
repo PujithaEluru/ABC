@@ -1,0 +1,180 @@
+1.What is Asynchronous Apex? What are its different types?
+
+Answer: Asynchronous Apex is used to run processes that are scheduled at a later time. There are four types of Asynchronous Apex.
+
+They are:
+
+Future Methods
+Batch Apex
+Queueable Apex
+Schedules Apex
+
+2.What is Visualforce? How to hide the Header and Sidebar in the Visualforce Page?
+
+Answer: Visualforce is a framework for the Force.com platform which enables developers to build custom interfaces that can be hosted natively on a lightning platform. It has a tag-based mark-up language like HTML.
+
+Each tag is equivalent to a coarse or fine-grained user interface components such as a page section, a related list or a field. It has 100 built-in components. The developers can create their own components using Visualforce.
+
+The attribute showHeader is set as “false” to hide the header of a Viusalforce page. To hide the sidebar, the sidebar is set as “false”. These two attributes are a part of the Visualforce component <apex page>. The attribute has a Boolean value.
+
+
+3.What is the difference between Standard and Custom Controller?
+
+Answer: Standard Controllers generate automatically for all standard pages. They contain the same logic and functionalities that are used for any standard Salesforce page. They can be used with standard and custom objects.
+
+Custom Controllers override the standard functionality of a standard controller which appears on a Visualforce page. Apex can be used for writing a custom controller or a controller extension.
+
+
+4.How to call a Controller Method within a JavaScript?
+
+Answer: To call a controller method (Apex function) from JavaScript, you need to use actionfunction.
+
+Below is a code snippet for your reference:
+
+<apex:actionFunction action="{!login}" name="login"/>
+
+5.What are the types of Bindings used in Salesforce?
+
+Answer: There are three types of bindings used in Salesforce as shown below.
+
+Data Bindings: It refers to the data set in the controller.
+Action Bindings: It refers to the action methods in the controller.
+Component Bindings: It refers to some other Visualforce components.
+
+
+6.Can you write Getter and Setter Methods in Salesforce?
+
+Answer: Yes, we can use a getter method to return values for a controller. Every value calculated by a controller and displayed on a page must have a getter method.
+
+On the other hand, the setter method is used for passing user-specified values from page mark up to the controller. The setter method in a controller is automatically executed, before any actions.
+
+7.What is Lightning Component?
+
+Answer: The Lightning Component framework is a user interface framework for developing single-page applications for desktop and mobile devices. It is possible to build Lightning components with two programming models i.e. Original Aura Component Model and the Lightning Web Component Model.
+
+It is supportive of partitioned multi-tier component development. It uses JavaScript for the client-side and Apex for the server-side.
+
+8.What is a Developer Console?
+Answer: The Developer Console is an integrated development tool which has a collection of tools. These can be used to create, debug and test the applications in Salesforce.org.
+
+9.What are the ways to deploy Metadata in Salesforce?
+
+Answer: The metadata in Salesforce is deployed in the following ways:
+
+Change Sets
+Eclipse with Force.com IDE.
+com Migration Tool – ANT/Java-based.
+Salesforce Package.
+
+10.What is an Attribute? What is a reRender Attribute Tag?
+
+Answer: The properties of a Visualforce component are named as attributes. Each and every Visualforce component in Salesforce comes with an attribute. For Example, <apex:CommandLink> is one of the attributes.
+
+The reRender attribute specifies a list of elements that can be dynamically updated using AJAX library of Salesforce. There is no need for the entire page to refresh. Only a portion of the page identified by the elements is named in the “rerender” attribute.
+
+
+11.Which tag is used to create a Button? Which tag is used for a URL link? Which is the tag for Password Protection?
+
+Answer:
+
+The tag <apex: commandbutton> is used for the button.
+The tag used for URL link is <apex: outputLink>.
+The tag used for password protection is <apex: inputSecret>.
+
+12.Diff blw insert() and database.insert()?
+
+13. What is Trigger.new?
+Answer: Trigger.new is a context variable to return the new versions of the sObject record. The sObject list is only available in insert and update triggers and the records can be modified only before triggers.
+
+
+14.Explain Exception Catch in a Program.
+
+Answer: Java has inbuilt exception handling and the normal code goes into the TRY block and the exception handling code into the CATCH block. Use try & catch block for using the code with multiple Java exceptions.
+
+
+15.What is an Access Modifier in a Program?
+Answer: Apex uses access modifiers for defining methods and variables. These are private, protected, global or public access modifiers.
+
+16.Which operation does not have Undelete?
+
+Answer: The before operation does not have Undelete.
+
+17.How is a link passed in Visualforce?
+
+Answer: Link is passed in Visualforce through the hyperlink.
+
+18.What is Static Resource?
+
+Answer: Static Resource allows you to upload content to reference in the Visualforce page. The resources can be archive files such as .zip or .jar files, stylesheets, images, and JavaScript & other files. The Lightning platform acts as a CDN(Content Distribution Network) and manages and distributes these files.
+
+
+19.What is a User Interface in Salesforce?
+
+Answer: Set up the user interface in Salesforce for giving the best working experience for the users. You can modify your org’s user interface by enabling and disabling settings.
+
+
+20.What is the use of an Outbound Message?
+
+Answer: An Outbound message is a part of the workflow and is created for a Workflow rule. It helps to send information to a specified URL endpoint. Information contained in the fields is specified during the creation of the outbound message. It sends secure and configurable API messages to a designated listener.
+
+
+21.What is an API in Salesforce? How can we use it?
+Answer: Salesforce has a set of APIs to access data from Force.com or Database.com.
+
+Some of the uses of these APIs include:
+
+a) SOAP API: It is one of the well-known APIs. It uses SOAP as a wrapper for API operations. It comprises a bulk of the API traffic lies. As tooling is needed to create, SOAP messages are mostly used in enterprise settings.
+
+b) REST API: This is ideal when you want to send a message from a client to a server and send back a response. The REST API enables you to integrate with Force.com applications by using simple HTTP methods and create dynamic interfaces. These methods are in XML or JSON formats. This helps to use the API for developing mobile applications or external clients.
+
+c) Bulk API: It is an asynchronous API and has the ability to manage large sets of data. The programmatic access enables you to quickly load data into the Salesforce org. It cannot be used for a handful of records and is easy to program dynamic API.
+
+d) Streaming: It allows us to create a push topic based on a query and get updates on the query, as the results keep on changing. It is used when the notifications are to be sent from the client to the server based on a defined criterion.
+
+
+22.What is the use of External ID Fields?
+
+Answer: External ID contains unique record identifiers for a system outside Salesforce. It is used for importing records. It is a custom field that has an external ID attribute. Once this option is selected, the import wizard detects Salesforce records with the same external ID.
+
+For Example, While matching accounts in Salesforce with some external accounting system an external ID enables you to access the unique ID of the accounting system and not the Salesforce ID.
+
+
+23.Which Platform is used for developing an App in Salesforce?
+
+Answer: The force.com platform is used for developing an App in Salesforce.
+
+24.What does the Data Wrapper Class contain?
+
+Answer: This contains abstract, structured and collection data.
+
+25.What are Primitive Data Types?
+
+Answer: Integer, Double, Long, Date, Date-Time, String, ID, Boolean, etc., are some of the examples of primitive data types. These are passed by value and not by reference.
+
+26.Is Return Type a must for a Method?
+
+Answer: Yes, the return type is a must for a method.
+
+27.What are the development tools for Apex?
+
+Answer: The development tools for Apex are Force. Com Developer Tools, Force. Com IDE and Code Editor.
+
+28.What are the different ways of Salesforce Deployment?
+
+Answer: Salesforce code is deployed with:
+
+Salesforce packages
+Change Sets
+Com Migration Tools
+Eclipse with Force.com IDE
+
+29.What is the Minimum Test Coverage that is required for Deployment?
+
+Answer: At least 75 % of your Apex code must be covered by unit tests in Salesforce, and all these tests must be completed successfully.
+
+30.What is SOQL used for?
+SOQL stands for Salesforce Object Query Language. It is very similar to the widely used language SQL (Structured Query Language), to query databases. SOQL is specifically designed for Salesforce data and is used to query the Salesforce platform to retrieve data. SOQL is used within Apex & Visualforce to return sets of data.
+
+
+
+

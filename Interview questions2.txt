@@ -1,0 +1,246 @@
+1. Can we convert the lookup relationship to Master detail relationship?
+A: Yes, we can convert the lookup relationship to master detail relationship if and only if all the existing record has valid lookup field.
+
+2. In how many ways we can invoke the Apex class?
+A: 1. Visualforce Page        2. Trigger        3. Web Services       4. Email Services 
+
+3. Can we create Master Detail relationship on existing records?
+A: No, first we have to create the lookup relationship then populate the value on all existing record and then we have to convert it.
+
+4.What are the types of controllers?
+Ans: 3 Types Controllers are available in Salesforce.
+1.Standard Controller   2. Custom Controller  3.Controller Extension
+
+
+6.How many ways we can create required fields?
+Ans:  1. Validation Rules   2.Page Layouts    3. Field Level Security    4. Triggers
+
+7. After executing workflow rules agin before triggers and after triggers will execute, How can you avoid?
+A: we have to set the value to already defined field so triggers cannot fire again.
+
+8. For an email format data entering how can you write validation rules?
+A: By using regex function
+
+9. What is SFDC life cycle ( After getting the requirements what will be the steps)?
+A:  Analysis, Design, Develop the code in the sandboxes, writing unit tests, and moving to test sandboxes to test 
+   and then deploy to production with adequate code coverage. 
+
+10. How can you avoid governer limits?
+A: Using batches we can avoid governor limits.
+
+11. Can we create Master Detail relationship on existing records?
+A:No. As discussed above, first we have to create the lookup relationship then populate the value on all existing record and then convert it.
+
+12.What are the types of email templates available in salesforce.com?
+A:
+1. Text
+2. HTML with Letter Head
+3. Custom HTML
+4. Visual force
+
+13. What is Roll up summary field in Salesforce?
+A: Roll up summary field in salesforce calculates the Count, Sum, Min or Max of particular field of any child record. Thus, we can say that Roll up summary field can only be created on Master object. 
+
+14. If i want record level access then what should i use from Salesforce security model?
+A:  Manual Sharing
+
+15. If i want Object level access then what should i use from Salesforce security model?
+A: Profile
+
+
+16. What is PageLayout?
+A: Pagelayout controls which fields will be displays in which order they will displayed ,which formate that field should be displayed.
+
+17.How many pageLayouts can be assigned to a profile on a object?
+A: For every profile only one pagelayout is define.
+
+18. What we can controll using pageLayout?
+A:Fields.
+
+19. How to add Custom button on the PageLayout?
+A: Drag and drop
+
+20. How many master detail fields can be created on the object?
+A: Up to 2 allowed to object.
+
+21. If we delete the parent record what will happens to child records?
+A: Deleting parent automatically deletes child.
+
+22. Who is the owner of the child records in master detail relation?
+A: Master
+
+23. Can child record be a master to some other object?
+A: A child of one master detail relationship cannot be the parent of another.
+
+24. Can we create a master detail on standard object?
+A: No We Can’t Create Master detail relation to Standard Objects, by default they are given Relations to each other.
+
+25. What is security sharing on the master detail relation?
+A: The security settings for the master record control the detail and sub detail records.
+
+26. How many lookup relations can be created on objects?
+A: 25 lookup relation relationships allowed per object.
+
+27.Can we create the lookup relation on standard object?
+A: Yes
+
+28.What is junction object or many to many relations?
+A: By using Junction Object we can achieve Many to Many relationship, here junction object is having 
+Master- Detail Relationship with different objects (Ex. Students & Courses). Using this Master to Detail Relationship, we can create the Many-to-Many Relationship in between the objects.
+
+29. What is primary master?
+A: The first master-detail relationship you create on your junction object becomes the primary relationship.
+
+30.What is secondary master?
+A: The second master-detail relationship you create on your junction object becomes the secondary relationship.
+
+31.Who is the owner for the junction object record?
+A: The junction object records inherit the value of the Owner field from their associated primary master record. Because objects on the detail side of a relationship do not have a visible Owner field, this is only relevant if you later delete both master-detail relationships on your junction object.
+
+
+32.Is it possible to convert master detail to lookup relation?
+A: If the parent object doesn’t have Rollup Summary fields for the child object then we can convert.
+
+33.What are rollup summary fields?
+A: Rollup-summary fields are supported in master detail relationship. The parent object can use roll-up summary field type to perform operations of sum, maximum, minimum, count among its children records. These fields are read only fields and are used to calculate values from a set of records.
+
+34.How many rollup summary fields can be created on the object?
+A: Roll up summary field can only be defined on the master object. max 25.
+
+35. Is it possible to edit roll up summary field value in a record?
+A: No. roll up summary fields are read only fields and they can not be edited.
+
+=====================================================================================================================================================================
+36.What is relation between Account and Contact?
+
+Account and contact have a lookup relationship. It is lookup because you can create a contact without account. However it behaves weird –like master detail in business logics – when you create a contact with account and you delete that account then contact will be also deleted
+
+
+37.User cannot see the records,if user donot have object level access even if user given public read/write in OWD.
+
+yes,user can'nt see the records,if user donot have object level access even if user given public read/write in OWD.
+
+
+38.Can we give one permission set to multiple user?
+yes.
+
+
+
+39.Anything which we cannot do in Process Builder,we can do in workflow?
+
+outbound message is not Available in Process Builder.
+
+Process Builder Limitations:
+=============================
+
+We’ve talked about some of the things you CAN do with Process Builder. Let’s talk about some of the limitations, so you don’t end up being blindsided. Here are some of the things it doesn’t do:
+
+Delete records
+
+Clone a record and it’s values
+
+Update unrelated records
+
+Send an outbound message without code
+
+6.one workflow rule on opportunity which is updating the amount filed to 10000.there is one validation rule on opp if the amount is >=10000 its throws error.
+
+40.order of Execution:
+==================
+
+System Validation Rules.
+Executes all before triggers.
+Custom Validation rules.
+Executes duplicate rules.
+Saves the record to the database, but doesn’t commit yet.
+Executes all after triggers.
+Executes assignment rules.
+Executes auto-response rules.
+Executes workflow rules.
+If there are workflow field updates, updates the record again.
+If the record was updated with workflow field updates, fires before and after triggers one more time. Custom validation rules, duplicate rules, and escalation rules are not run again.
+Executes processes and flows launched via processes and flow trigger workflow actions.
+Executes escalation rules.
+Executes entitlement rules.
+If the record contains a roll-up summary field or is part of a cross-object workflow, perform calculations and updates the roll-up summary field in the parent record. The parent record goes through the save procedure.
+If the parent record is updated, and a grandparent record contains a roll-up summary field or is part of a cross-object workflow, performs calculations and updates the roll-up summary field in the grandparent record. Grandparent record goes through the save procedure.
+Executes Criteria Based Sharing evaluation.
+Commits all DML operations to the database.
+Executes post-commit logic, such as sending an email.
+
+41.Different kinds of report in salesforce?
+
+Tabular Reports:
+=================
+Tabular Reports are the most simple type of Salesforce Report. They show your data in rows and are most effective when your goal is to export it. Tabular Reports shouldn’t be used when you want to manipulate data in any way like present totals, calculations, or groups of data.
+
+Matrix Reports:
+===============
+Matrix Reports are a step more complicated than Tabular Reports where they can show data in rows and columns. They can be used to see different totals from your data and are effective when your goal is to display a huge amount of complex data.
+
+Summary Reports:
+================
+Summary Reports in Salesforce are the most commonly used reports and are designed to show groups of data. With summary reports, you can group data by different accounts, and then do calculations to see totals, maximums, minimums, and averages. These reports allow you to easily see which accounts are bringing in the most revenue and which products or services they’re purchasing the most.
+
+Joined Reports:
+===============
+Joined Reports in Salesforce give you the ability to create two separate reports and compare their individual data. It’s not as commonly used, but can be effective when trying to learn distinct differences between accounts. 
+
+
+
+42.There are 4 ways to call an Apex class:
+========================================
+visual page.
+web services.
+Triggers.
+email services.
+
+43.What is Web to Lead/Web to case?
+Web-to-Lead or Web-to-Case functions are tools that automatically capture leads or cases from a website external to Salesforce to create a lead or case record directly in Salesforce.
+
+
+44.Explain about lead Assignment Rules?
+Lead assignment rules can assign leads regardless of whether leads are created manually, are generated from Web-to-Lead forms, or are imported using the Data Import Wizard. Case assignment rules can assign cases regardless of how cases are created.
+
+45.What is personal account and business account in Salesforce?
+Business accounts store information about companies. Person accounts store information about individual people.
+
+
+46.what is work.com?
+work.com is the social performance Management Platform which is mainly used by managers and employees to improve their work performance.
+for monitoring the performance of employees.
+
+47.what is desk.com?
+Salesforce desk.com is an online helpdesk system.through desk.com,salesforce.com interact with customers and solve their issues.
+
+48.What is site.com?
+site.com is also an App builder portal.
+
+49.Difference between lookup and masterdetail relationship?
+
+Master-Detail Relationship :
+============================
+It creates the parent(master) child(Detail) relationship between objects.
+If we delete master records then detail (Child) records are deleted.
+Rollup-summary field can be created in a master-detail relationship.
+We can have maximum 2 master details on an object
+Master is required field on the child object.
+
+Look up Relationship :
+=======================
+Look up relationship creates relations between two objects.
+If we delete any object then another object is not deleted.
+Parent is not required in the child record.
+
+50.what is self relationship?
+A Self-Relationship is a lookup relationship to the same object. For example : we have a field on Account which is Parent Account that allows us to choose any account for being a parent account of an existing one.
+
+51.what is custom metadata?
+Custom metadata is customizable, deployable, packageable, and upgradeable application metadata. First, you create a custom metadata type, which defines the form of the application metadata. Then you build reusable functionality that determines the behavior based on metadata of that type.
+
+
+52.What is the difference between queue and public group in Salesforce?
+Public Group is kind of team or group of related users, this will help to share the data. Queues are typically used when you want to assign a record to a bunch of users. Using Queues you can assign a record to multiple users, so that any member of the queue can work on the record.
+
+
+

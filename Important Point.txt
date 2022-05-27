@@ -1,0 +1,237 @@
+Standard Fields:
+================
+-->Created by
+-->Last Modified by
+-->Name
+-->Owner
+
+Note:
+====
+If we Create Record Type it Will not Show Owner Field.
+
+We Can not Change Label Name for Standard Fields Expect one Field(Name).
+
+Master Detail Field Data Type Should not be Available on Standard object.
+
+If You Delete Custom Object,Tab Also Deleted Automatically.
+
+Recycle Bin: Only Records Available.
+             Objects Not Available(Under Deleted object it will be Available).
+
+
+Salesforce Allow Duplicate Data???
+
+================================================================
+
+
+Objects:
+========
+
+->Standard Objects.
+->custom Objects.
+
+
+Standard Objects:
+=================
+
+->Predefined By Salesforce.
+->Cannot be Deleted.
+
+
+Custom Objects:
+===============
+
+->Based On the Client Requirement Objects Will be Defined.
+->We can Modified,Delete as per the Requirement.
+
+->Every Object Will Have 3 character ID ,Based on that Salesforce will identify.
+
+->We can Create Custom object in 3 ways.
+->While Creating Custom object,salesforce will Create Standard Field is Name.
+->Auto Number.
+->Text.
+
+IN Development:
+================
+
+This Object Can be Access only by the Admin.
+
+Deployed:
+=========
+
+Object Will be Accessed based on the Organization Security Model.
+
+->By Using Schema Builder also we can Create Object.
+
+Role/Profile/User:
+==================
+
+Role:
+=====
+->This Will Specify the Position in the hierarchy.
+->What Data you Can Access.
+->This Will Specify to Whom the user will Report.
+->We Cannot Delete the Role Having Sub ordinate Roles.
+->We Can See the role Structure in 3 Ways.
+     Tree View.
+     List View.
+     Sorted List View.
+->If two Users Have Same Role they May or May Not get Same Permissions.
+
+Profile:
+========
+->Profile Will Specify what user can access and perform when he login into Salesforce org.
+
+There are two types of Profile.
+->Standard Profile.
+->Custom Profile.
+
+Standard Profile:
+=================
+->Profiles Created By Salesforce are called Standard Profiles.
+->Standard Profiles cannot be deleted.
+
+Custom Profile:
+===============
+->Profiles Created by User Based on the Requirement.
+->Custom Profile can be Edited,Deleted based on the Requirement.
+->Every Profile is Created for Specific License.
+
+Profile Controls:
+================
+Applications.
+Objects.
+Fields.
+PageLayouts.
+Record Types.
+Admin Permissions.
+CRUD
+User Level Permissions.
+login access Permissions.
+
+->If two Users have same Profile they will get same Permissions.
+
+User:
+=====
+->User is Active Play Member.
+->Every user have Role,Profile,License.
+->Once a User Created,user cannot deleted,we can deactive him.
+
+Lookup Relationship:
+====================
+->Relations are used to establish connection between two objects.
+->They are 5 Type of Relations.
+   Lookup Relation.
+   Master Detail Relation.
+   Many to Many Relation.
+   External Lookup Relation.
+   Hierarchical Relation.
+
+Lookup Relation:
+================
+->Lookup Relation is a Datatype of a Field.
+->We can Create Lookup Field on Standard and Custom Objects.
+->We can Create Lookup field on the object which contain data and which doesnot contain data.
+->it will create one to many relation between the object.
+->object on which we have created lookup field,that object is called child object.
+->object to whose data lookup field is reffering that object is called Parent object.
+->Lookup is a optional field.
+->Lookup fields will store ID of the Parent Record.
+->We can Create Self Lookup.
+->If you Delete Parent Record,lookup field value is kept as blank.
+->If you donot want Parent Record to be delete when it have Child,Enable the option donot Allow deletion of Parent when it part of lookup Relation.
+->Maximum Lookup relation,we can create is 40.
+
+Master Detail Relation:
+=======================
+->It is one to Many.
+->It only Created on Custom Objects.
+->Master Detail is required Field.
+->Master Detail field can be created only on those custom objects which doesnot contain data.
+->On Which Object we are created Master Detail Field that object is Called Child/Detail object.
+->object to Whose data we are reffering that object is master object.
+
+
+Pagelayout:
+===========
+->By Using Pagelayout we can control which field has to displace and which order it should display.
+
+Note:
+====
+->When we click on Lookup or Master Detail Icon Which field has to be display will be controlled by Pagelayout.
+
+Rollup Summary:
+===============
+->This Field can be created on Master object in Master detail Relation.
+->This is used to create Aggregate operations on corresponding child records.
+
+Aggregate operations:
+=====================
+count
+Sum
+Min
+Max
+
+Queue:
+======
+->Queue is a group of users collabrating together and share the workload.
+->Queue will be owner of record.
+->Queue members will be user,role,role&sub,Public group.
+
+Public Group:
+=============
+->It is group of users wrapped under one name.
+->If Admin Create a Group is called Public Group.
+->If any other create is called Private Group.
+
+Data Security Model:
+=====================
+
+
+Object Level:
+============
+->Object Level Permissions are controlled by profile.
+->Profile will decide what CRUD operations user can Perform on the object.
+
+Permission Set:
+===============
+
+->Using Permission set also we can Control the access on the object.
+
+Record Level Permissions:
+==========================
+
+OWD:
+====
+->This Will Specify minimum Level of access that every userhas on record.
+->There are 6 type of OWD.
+     Private.
+     Public Read
+     Public Read/Write.
+     Public Read/Write/Transfer.
+     Public Full Access.
+     Controlled by Parent.
+->On a Record we can perform Read,Edit,Delete,Transfer.
+
+Profile Level: View All,Modify All
+=============
+
+View All:If you define View All permissions on a object for a Profile.
+         All User with this Profile can Perform read operation on every record.
+
+
+Modify All:If You Define Modify All permissions on a object for a Profile.
+           All User with this Profile can Perform read/Write/Transfer operation on every record.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+1.How many ways we can create required fields?
+Ans:  1. Validation Rules   2.Page Layouts    3. Field Level Security    4. Triggers
+
+2.What is Roll up summary field in Salesforce?
+
+3.What is junction object or many to many relations?
+
+4.Explain about object and difference between standard and custom object?
+
+5.create custom object in salesforce org?
+
+6.What is Trigger?
+7.Explain Trigger events?
+8.Explain Context Variables?
+9.Write Syntax of Trigger?
+10.Write after update trigger on contact?
+11.Is it possible to write multiple events in trigger?
+12.Explain about Trigger.new?
+13.Explain about before insert trigger?
+14.Write a insert trigger on opportunity,which will set stagename as prospecting,closedate as 15days from today,type as new customer.
+15.Write a insert trigger on lead,which set the value of rating,leadsource.
+   if the industry is banking then set rating as hot and leadsource as web.
+   if industry is other than banking then set rating as warm and leadsource as email.
+16.Whenever New Account Record is created then needs to create associated Contact Record automatically.
+
+trigger AccountAfter on Account (after insert) {
+    List<contact> cons=new List<contact>();
+    for(Account acc: Trigger.New){
+        Contact c=new Contact();
+        c.accountid=acc.id;
+        c.lastname=acc.name;
+        c.phone=acc.phone;
+        cons.add(c);
+    }
+    insert cons;
+ 
+}
+
+
+

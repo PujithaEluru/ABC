@@ -1,0 +1,83 @@
+1.When we can not add time dependent action in workflow rule?
+
+Time dependent actions in workflow rules can not be added when the following actions takes place.
+
+When workflow rule is active.
+When workflow rule is deactivated and has pending actions in the queue.
+When the workflow rule criteria of a record is set to: created, and every time it’s edited.
+When the workflow rule is included in a package.
+
+2.We have a "Time based workflow" and there is action scheduled to be executed, if we deactivate the workflow, scheduled actions will be removed from queue or not?
+  
+ Even after deactivating the the workflow, its action will not be removed. It's still active in queue.
+
+3.is it possible to Insert a record in two Objects using import wizard?
+
+4. can we skip to Trigger the workflow rules and processes for new and updated record while importing data.?
+
+5. What is difference between Validation rule and Duplicate rule?
+
+6. What is not supported in Joined reports?
+Internet Explorer 6 is not supported for joined reports. You can't filter data on a joined report in dashboard view or add a filter to a dashboard that only has joined reports. When using the console in run mode, the Hide Details and Show Details buttons aren't available for joined reports.
+
+7.what is licence and difference between salesforce and salesforce platform licence?
+Salesforce licenses are designed for users who require full access to standard CRM and Force.com AppExchange apps. CRM apps are anything that requires access to Standard Objects like... Salesforce Platform licenses are designed for users who only need access to custom apps, and NOT the standard CRM functionality.
+
+8.while creating object we have two options in development and deployed below deployment status what is use of that checkbox.?
+
+While developing a custom object or external object, you might not want users to see and interact with it. Because users can get frustrated with changes in layout or lose data when you delete custom fields, control visibility of the new object until you’re finished.
+
+Use the Deployment Status setting in the object definition to control when users can see and use the object and its associated custom tab, related lists, and reports.
+
+Set the deployment status to In Development when first creating your custom object or external object. Doing so hides it from users while you are designing and testing it. Only users with the Customize Application permission can see the object tab, search results, related lists, and report data types.
+Change the deployment status to Deployed when you want to allow all users to use the object and the associated custom tab, related lists, and reports.
+If you make more enhancements after deploying a custom object or external object, you can change the deployment status back to In Development.
+
+
+What is the difference between isNull and isBlank?
+Use the ISBLANK() function for text fields. As text fields can never be NULL, even if nothing is provided as a value, ISNULL() function takes only an empty value. If ISNULL() is used with a text field then it returns false.
+
+
+The differences between SOQL and SOSL are given below.
+
+SOQL	
+====                                                                                          SOSL
+                                                                                             ========
+It is possible to search only one subject at a time.	                          Multiple objects can be searched here at a time.
+Uses “SELECT” keyword for retrieval of records from the database.	          Uses “FIND” keyword for retrieval of record from database.
+It allows to search only one table.	                                          It allows to search multiple tables.
+It allows to perform DML operations on query results.	                          It is not possible to perform DML on search results.
+This is used in a query ( ) call.	                                          This is used in a search ()call in the API.
+This is used in classes and triggers.	                                          This cannot be used in triggers.
+Returns records.	                                                          Returns fields.
+
+What are Governor Limits? Give three examples.
+
+Answer: Salesforce works in a multi-tenant environment and imposes runtime limits to have the same performance within the database. These are imposed by the Apex runtime engine and ensure that the code does not misbehave.
+
+This way the developer is forced to write efficient, scalable code.
+
+Here are some examples of Governor Limits:
+
+The total number of SOQL queries issued has a synchronous limit of 100 and an asynchronous limit of 200.
+The total number of records retrieved for Database getQueryLocator must be limited to 10,000.
+The total number of records retrieved by a single SOSL query is 2000.
+
+What are Workflows in Salesforce? What are the types of Workflow?
+
+Answer: Workflow in Salesforce is for automating the standard internal processes and procedures and thereby save time across the organization. The main container for a set of workflow instructions is a Workflow Rule. It is possible to sum these instructions as an if/then statement.
+
+There are two components of the workflow rule i.e. criteria and the action. The criteria are the ‘if’ part of the if/then statement and the action is the ‘then’ part of the if/then statement.
+
+For Example, Send an email alert to the concerned manager, when a contract is about to expire. The workflow rule is run when the criteria are met.
+
+There are two types of workflow in Salesforce:
+
+Immediate Actions: It fires immediately when the workflow criteria are met. The associated actions email alerts/field updates also take place with immediate effect.
+Time-dependent Action: When the criteria are met, the associated actions take place after a certain duration of time. This time is based on a value set.
+
+What is an Audit Trail?
+Administrators need to make changes in the organizational setup. Audit Trail history helps you to track the recent 20 changes that are made in setup, by multiple administrators.
+
+
+

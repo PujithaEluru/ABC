@@ -1,0 +1,78 @@
+Development:
+============
+
+Wrapper Class:
+==============
+Wrapper Class is a collection of Data Members.
+
+
+Student Std= new Student();
+std.name="puji";
+std.phone="3456789";                       |   std   |  Ravi
+std.age="24";                                 s1 s2        2345678 27
+ 
+Student s1=std;
+Student s2=s1;
+s1.name="Shiva";
+s2.phone="2345678";
+std.name="Ravi";
+s1.age="26";
+s2.age="27";
+
+System.debug(s1.Name);     
+System.debug(s2.Name);              Ravi
+System.debug(std.Name);
+
+System.debug(s1.Phone);
+System.debug(s2.Phone);            2345678   
+System.debug(std.Phone);
+
+Array:
+======
+Array is a Collection of Simillar Elements.
+Memory will be allocated sequentially.
+Element in the array are accessed using index.
+Index value will start with Zero.
+
+DataType:
+=========
+DataType[] arrayname=new DataType[size];
+
+Example:
+========
+Integer[] ages=new Integer[5];
+string[] name=new string[name];
+
+
+for(Integer i=0; i<=cityName.size(); i++)
+{
+    system.debug("Index"+i);
+    system.debug(+cityName[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

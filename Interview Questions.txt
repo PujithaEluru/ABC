@@ -1,0 +1,295 @@
+Salesforce administrator interview questions on CRM Basics.
+===========================================================
+
+1.What is Cloud computing?
+“Cloud Computing is a new trend in IT development, deployment, Delivery module of business Products, Services that are provided over the internet that are been used by the real time User“.
+
+Advantages of Cloud Computing:
+==============================
+->What has made cloud computing work is the tremendous growth in processing power, reliability of the Internet and the great increase in broadband speeds.
+->It makes tremendous sense to make use of the centralized server of the provider of cloud computing services as not only does it reduce the costs by a great extent by making redundant the need to buy several software licenses, it also eliminates the huge costs required by an organization to maintain and upgrade existing software.
+->Another huge advantage is that since cloud computing eliminates the need for an organization to buy hardware, a plenty of physical space is saved. There is no need to reserve space on the company premises for giant servers, for instance.
+
+
+Based on their working, cloud computing services can be classified into:
+========================================================================
+Software as a Service:
+======================
+->Here, the software applications are managed by the provider of the cloud services and can be accessed by organizations through a simple browser, which loads all the applications of the service provider. The client businesses do not have to worry about licensing or server costs.
+->SaaS means Software as a Service. Through this Services all the software’s are distributes over the cloud. By using SaaS no need to install any software all software’s are readily available over the internet .
+
+Platform as a service (PaaS): 
+=============================
+->Here, dedicated software platforms are built and managed by the cloud computing service provider to run and develop business applications. These platforms support every stage of creating a web application online, no additional software is required whatsoever in the local computer.
+->PaaS means” Platform as a Service”. Here in “PaaS “ the cloud service providers provides hardware, OS(operating System), Storage, Network services over the cloud. It is the way like a rent. If there is no service like Platform and there will be no Applications. Which applications are build on a Platform.
+
+Infrastructure as a service (IaaS):
+==================================
+->This is the most advanced form of cloud computing as here the virtual servers are purchased by businesses along with software and hardware from the cloud computing service provider on a  per-use basis.
+->Full form IaaS is “Infrastructure as a Service”. Here in IaaS  the cloud service providers will provides infrastructure like servers, hosting services and storage. Servers and storage’s are the basic services provide by Cloud Service Providers.
+
+2.Expand CRM and briefly explain about CRM ?
+Full form for CRM or Acronym for CRM is “Customer Relationship Management “. We can understand from the full form where CRM is an application used to automate Sales and marketing functions by a using a Software called CRM Software  . BY using CRM Software every Company / Organization plans to increase their revenues and profits. This strategy of increasing revenue is done mainly by attracting Customers, clients, Sales etc.
+
+3.List some CRM Software’s?
+
+We have number of CRM softwares which are provided by top CRM companies some of them are listed below depending upon their present market.
+
+Salesforce CRM.
+Microsoft Dynamics CRM.
+Oracle CRM.
+SAP CRM.
+Sage CRM.
+NetSuite CRM.
+Oracle CRM on Demand.
+Oracle Sales Cloud(Fusion CRM).
+SugarCRM.
+Nimble
+
+4.What are deployment modes of cloud computing?
+
+Cloud computing services can be provided in four different deployment modes depending on size and structure of an organization. Four deployment modes of cloud computing are
+
+Public Cloud.
+Private Cloud.
+Hybrid Cloud and
+Community Cloud.
+
+5.What is Public Cloud?
+->Public cloud can be available to people across the world. In this Public Cloud the user has no control over the resources.
+
+6.What is Private Cloud?
+->Private Cloud Can be accessed only with in the limited premises. In Private cloud Cloud Services Providers Cloud infrastructure to particular Organization or Business specially. This Cloud infrastructure is not provided to others.
+
+7.What is Hybrid Cloud?
+->Hybrid Cloud is the combination of number of clouds of any type but the cloud has the ability to allow data and / or applications to be moved from on cloud to another cloud. Hybrid Cloud is a combination of (Public Cloud ,Private Cloud, Community Cloud). Here API is used as an interface between public and Private Cloud.
+
+8.What are the different types of Cloud Service providers?
+->Cloud Service Providers are those who provide cloud services to the business and customers or consumers. Cloud Service providers will have huge data base, Data centers, infrastructure, software’s, platform and hardware systems.
+
+9.Difference between Public and Private Cloud?
+->Public cloud can be available to people across the world. In this Public Cloud the user has no control over the resources. Where Private Cloud Can be accessed only within the limited premises. In Private cloud Cloud Services Providers Cloud infrastructure to particular Organization or Business specially. This Cloud infrastructure is not provided to others.
+
+10.What is Salesforce?
+->Salesforce is one of the best customer relationship management (CRM) tool. Salesforce is among one of the best web based flexible and powerful database provider available in the market.
+
+11.What are the different Salesforce Editions ?
+-> Essentials/Group: Designed foe small businesses that want to get started with a CRM System quickly
+-> Proffesional: Designed for Business requiring full feautured functionality
+-> Enterprise: Meet the needs of large and complex businesses
+-> Unlimited: Maximize your success and extend its across the entire enterprise through the lightning platform
+
+12.Number of Salesforce Editions released per year?`
+-> Salesforce Releases e updates for every year. They are
+
+Spring.
+Summer.
+Winter.
+
+13.Difference between Salesforce.com and Force.com?
+-> Salesforce.com and fore.com are relatively same but they are different in their functionality. Salesforce.com is used to develop CRM functionality based application where force.com is used to customize our data model, business logic and User interface
+->Salesforce.com is a Software as a Service CRM Application.
+->Salesforce is a SAAS Product.
+->Force.com is a Platform to support the developers Build Customized enterprise applications.
+->Force.com is PAAS Product.
+->Force.com helps in building & Operating application that are connected with Salesforce Data.
+->Salesforce helps the users to store data of Applications.
+
+14.What is Database.com?
+-> Database.com is a type of service provided by Salesforce.com to enhance the power of Salesforce.com CRM applications. Database.com provides “Data as a Serivce” to subscribers.
+
+15.What is App in Sales force?
+-> App means an Application. In Salesforce an Application consists a group of tabs which are designed to work as a single function. We have number of applications in Salesforce.com some of them are sales, marketing, chatter, site.com, work.com etc.
+
+We can create new application and also customization for the existing apps in Salesforce.com. To create new app in sfdc go to Setup=>Build=>Create=>App.
+
+16.What is an object in Salesforce?
+-> An Objects is represented as a database table which stores organization data . Objects consists of set of fields and we store data against that field. To view data Salesforce provided  TABS.
+
+17.Different types of object in Salesforce.com? And why they called so?
+-> In Salesforce.com we have two types of objects. They are
+
+1.Standard objects.
+2.Custom Objects.
+
+-> Standard objects: Standard objects are called so because they are created and provided by Salesforce.com.
+-> Standard objects are by default provided by salesforce and users does not have more control over it like sharing , deleting, editing, etc.
+   They are more standard objects few of them are Accounts, Contacts, Opportunities, Leads, Cases, Activity etc.We cannot defined standard objects with "append c"
+
+-> Custom Objects: Custom objects are those which are created by an User in salesforce.com.
+   Custom objects are users created objects and the users have all level of access to it.
+
+18.What is MVC Architecture ?
+-> Salesforce uses MVC Architecture. 
+  MVC Full form : Model View Controller
+  Model: It deals with data base designing like data table, fields, data types etc.
+  View: It deals with UI Customization like Page Layout , Designing of the Page.
+  Controller: It controls the data flow b/w the Model and View.
+
+19.What is Governer Limits and Multi-Tenant Architecture ?
+-> Multitenant means shared by many. Since , Salesforce is a cloud tool and millions of users are using it at a time. In order to avoid mono-poly (Influence of single or group of users) on cloud. Salesforce provides all limits for all functionalities and those limits are called Governer Limits.
+
+20.What is TAB in Salesforce?
+-> Salesforce.com provides list of tabs and are placed in Tab menu. To access data of an objects Tabs are used. Tabs in Salesforce are three types they are.
+
+1.Custom Tabs.
+2.Visualforce Tabs.
+3.Web Tabs.
+
+21.What are the Standard and Custom Fields in Salesforce?
+-> Standard fields for custom objects stores the information about  created by, modified by, currency, Name, owner and Division. These are the standard fields in Salesforce.com.
+-> Custom field for custom objects store unique data or information of an organization. 
+
+22.List examples of custom field types?
+-> Some of the custom field types are date field, Date/Time field, Currency field, Checkbox field, Number field, Text field, Pick list field, Email field, percent fields, phone field, Url field and many more.
+
+23.How many custom fields can I created in an object?
+-> In Unlimited edition we can create up to 500 fields per object. In professional edition we can create up to 100 custom fields per object.
+
+24.What is meant by Field level Security ?
+-> You can restrict access to the fields for the users using field level security, you can make a field required or Read only hidden by using field level security.
+
+25.What is Page Layout and Record Types?
+-> Page Layout :- In page layout customization can be done like fields, related lists, custom links can be arranged.
+-> Record Types :- Record types in salesforce helps to implement business processes like defining picklist values for standard and custom pick lists.
+
+26.what is meant by lightning record page in salesforce ?
+-> A Lightning Record Page is a collection of several components within a single web page. By default, each object – Accounts, Contacts, Opportunities, etc. – has its own unique record page provided by Salesforce, consisting of several standard lightning components, also provided by Salesforce.
+
+27.What is meant by Compact Layout in Salesforce ?
+-> Compact layouts control which fields appear in the header. For each object, you can assign up to 10 fields, including the Name field, to display in that area.
+
+28.What is meant by Validation Rule in Salesforce?
+-> Validation rules verify that the data a user enters in a record meets the standards you specify before the user can save the record. A validation rule can contain a formula or expression that evaluates the data in one or more fields and returns a value of “True” or “False”.
+
+29.What is a profile?
+-> Profiles determine what users can do in Salesforce. Theycome with a set of permissions which grant access to particular objects, fields, tabs, and records. Each user can have only one profile. Select profiles based on a user’s job function (the Standard User profile is the best choice for most users). Don’t give a user a profile with more access than the user needs to do their job. You can grant access to more items the user needs with a permission set.
+
+30.What  is Roles?
+->Roles determine what users can see in Salesforcebased on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by users below them. Users at lower levels can't see data owned by users above them, or in other branches, unless 
+sharing rules grant them access. Roles are optional but each user can have only one. If you have an org with many users, you may find it easier to assign roles when adding users. However, you can set up a role hierarchy and assign roles to users at any time. Roles are only available in Professional, Enterprise, Unlimited, Performance, and Developer editions of Salesforce.
+
+
+31.What is User?
+->A user is anyone who logs in to Salesforce. 
+
+Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user can access. Each user account contains at least the following:
+Username
+Email Address
+User's First and Last Name
+License
+Profile
+Role (optional)
+
+32.Difference between Role and Profile?
+
+Roles :- Using we can provide record level access like organization wide defaults, Role hierarchy, sharing rules and Manual sharing. Simply roles influences record level access.
+
+Profiles :- Using  profile object level and field level access can be made like general permissions, tab level permissions, read & write permissions etc.
+
+33.Number of standard profiles available in Salesforce.com?
+
+In salesforce we have 6 standard profile they are.
+
+Standard user.
+Solution manager.
+Marketing User.
+Read only.
+System administrator.
+
+
+34.How to get security token in Salesforce.com?
+To get security token in salesforce.com go to your name=>Personal=>Reset my Security token.
+It’s a case-sensitive alphanumeric code that’s tied to your password. Whenever your password is reset, your security token is also reset.
+
+35.Tell me about  Company Profile?
+In salesforce.com company profile consists of information about language, locale, time zone, number of licenses, storage and available space, about fiscal year, address and currencies.
+
+36.What is a Fiscal Year in Salesforce?
+Fiscal years in Salesforce are used to define starting and ending date of an organization financial year.Fiscal years in salesforce are two types they are.
+
+Standard fiscal year :- To change starting month of the fiscal year this type is used.
+Custom fiscal year :- We can set custom fiscal year dates like quarters, weeks.
+
+
+37.How to delete user from Salesforce?
+In salesforce.com, deleting a user is not possible. But the user can be deactivated by freezing that user in salesforce. To deactivate user go to Setup=>Administer=>Manage users=>Users=>Click on Freeze.
+
+38.How to freeze users in salesforce.com?
+In salesforce.com, deleting a user is not possible. But the user can be deactivated by freezing that user in salesforce. To deactivate user go to Setup=>Administer=>Manage users=>Users=>Click on Freeze.
+
+39.In how many ways can we store files, images and documents in salesforce.com? what are they?
+
+In Salesforce.com we can store files, images and documents in 5 types they are.
+
+Attachments.
+Documents.
+Google drive.
+Libraries.
+Chatter Files.
+
+40.What is a dependent picklist?
+Dependent Picklist allows to contain multiple values and pick value one among them or Multiple values among them. Dependent fields depends upon controlling field.
+
+41.What are Static Resources?
+Static resources helps to store upload images, files, zip files, documents, javascript files, Css Files which can be used in visualforce pages. Maximum data storage limit for static resource is 250mb.
+
+42.List some standard indexed fields in salesforce.com?
+Id, name, owner fields, lookup fields, master-detail relationship fields, audit dates like Last Modified dates etc are the standard indexed fields in Salesforce.com.
+
+Primary keys (ID, Name, and Owner fields).
+Foreign keys (lookup or master-detail relationship fields).
+Audit dates (such as SystemModStamp).
+Custom fields marked as External ID or Unique.
+
+43.Explain the term “Data Skew” in Salesforce.
+“Data skew” is a condition which you will encounter when working for a big client where there  are  over  10,000  records.  When  one  single  user  owns  that  many  records we  call that condition ‘ownership data skew’.
+When such users perform updates, performance issues will be encountered because of “data skew”. This happens when a single user/ members of a single role own most of the records for a particular object.
+
+44.What is sandbox org?
+->A Sandbox is a copy of Production Environment,used for Testing and Development Purposes.
+
+Types of Sandbox:
+=================
+->Developer Sandbox.
+->Developer Pro Sandbox.
+->Partial Data Sandbox.
+->Full Sandbox.
+
+45.What is Salesforce Lightning App Builder?
+->The Lightning App Builder is a Point-and-click tool that makes it easy to Create custom pages for Salesforce mobile App and Lightning Experience.
+
+   With Lightning App Builder,you can Build:
+   ->Single Page Apps.
+   ->Dashboard Style Apps.
+   ->Customize the record pages for your objects.
+   ->Custom Salesforce Home pages.
+
+46.Explain Governance Limits?
+->Governance Limits are the limits that controls the number of records you can store in the share Database.
+
+
+============================================================================================================================
+
+22.what is difference between ISblank() and IsNull()?
+23.what is difference between 15digit and 18 digit record ids in salesforce?
+24.what is difference between detail page and edit page?
+25.What is out of box functionality?
+26.for which data types we can enable external id?
+27.what is inline editing?
+28.Can we create a new profile without cloning an existing profile?
+29.Diff blw Dataloader and import wizard?
+30.Data loader or import wizard supports which file format?
+31.How to insert null values into Data loader?
+32.Maximum Batch size of data loader?
+33.How Many ways we can made field is required?
+
+
+
+
+
+
+
+
+
+
